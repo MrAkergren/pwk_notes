@@ -1,0 +1,248 @@
+# Nmap 7.01 scan initiated Sat May 14 23:11:58 2016 as: nmap -sS -p 110 -oN pop3scan.txt 192.168.11.200-254
+Nmap scan report for 192.168.11.201
+Host is up (0.061s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:02:91 (VMware)
+
+Nmap scan report for 192.168.11.202
+Host is up (0.063s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:3D:08 (VMware)
+
+Nmap scan report for 192.168.11.203
+Host is up (0.024s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:24:54 (VMware)
+
+Nmap scan report for 192.168.11.204
+Host is up (0.049s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:3A:5A (VMware)
+
+Nmap scan report for 192.168.11.205
+Host is up (0.063s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:1F:F6 (VMware)
+
+Nmap scan report for 192.168.11.206
+Host is up (0.063s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:7A:2E (VMware)
+
+Nmap scan report for 192.168.11.207
+Host is up (0.024s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:17:61 (VMware)
+
+Nmap scan report for 192.168.11.208
+Host is up (0.063s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:21:FD (VMware)
+
+Nmap scan report for 192.168.11.209
+Host is up (0.063s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:35:5B (VMware)
+
+Nmap scan report for 192.168.11.210
+Host is up (0.024s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:21:F1 (VMware)
+
+Nmap scan report for 192.168.11.214
+Host is up (0.19s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:89:0C:2D (VMware)
+
+Nmap scan report for 192.168.11.215
+Host is up (0.099s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:5D:4A (VMware)
+
+Nmap scan report for 192.168.11.216
+Host is up (0.099s latency).
+PORT    STATE SERVICE
+110/tcp open  pop3
+MAC Address: 00:50:56:AF:1B:EA (VMware)
+
+Nmap scan report for 192.168.11.218
+Host is up (0.085s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:31:B1 (VMware)
+
+Nmap scan report for 192.168.11.219
+Host is up (0.085s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:89:53:2E (VMware)
+
+Nmap scan report for 192.168.11.220
+Host is up (0.12s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:6F:4D (VMware)
+
+Nmap scan report for 192.168.11.221
+Host is up (0.086s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:68:60 (VMware)
+
+Nmap scan report for 192.168.11.222
+Host is up (0.099s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:5B:FE (VMware)
+
+Nmap scan report for 192.168.11.223
+Host is up (0.12s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:11:69 (VMware)
+
+Nmap scan report for 192.168.11.224
+Host is up (0.17s latency).
+PORT    STATE SERVICE
+110/tcp open  pop3
+MAC Address: 00:50:56:AF:02:DA (VMware)
+
+Nmap scan report for 192.168.11.225
+Host is up (0.17s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:5E:40 (VMware)
+
+Nmap scan report for 192.168.11.226
+Host is up (0.086s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:3E:4D (VMware)
+
+Nmap scan report for 192.168.11.227
+Host is up (0.19s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:1E:03 (VMware)
+
+Nmap scan report for 192.168.11.229
+Host is up (0.17s latency).
+PORT    STATE SERVICE
+110/tcp open  pop3
+MAC Address: 00:50:56:AF:20:21 (VMware)
+
+Nmap scan report for 192.168.11.230
+Host is up (0.20s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:49:FC (VMware)
+
+Nmap scan report for 192.168.11.231
+Host is up (0.18s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:44:78 (VMware)
+
+Nmap scan report for 192.168.11.234
+Host is up (0.18s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:2A:ED (VMware)
+
+Nmap scan report for 192.168.11.235
+Host is up (0.19s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:3D:78 (VMware)
+
+Nmap scan report for 192.168.11.236
+Host is up (0.19s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:49:1F (VMware)
+
+Nmap scan report for 192.168.11.237
+Host is up (0.19s latency).
+PORT    STATE SERVICE
+110/tcp open  pop3
+MAC Address: 00:50:56:AF:08:0A (VMware)
+
+Nmap scan report for 192.168.11.238
+Host is up (0.19s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:66:06 (VMware)
+
+Nmap scan report for 192.168.11.239
+Host is up (0.19s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:60:94 (VMware)
+
+Nmap scan report for 192.168.11.241
+Host is up (0.19s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:23:DC (VMware)
+
+Nmap scan report for 192.168.11.242
+Host is up (0.20s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:2F:95 (VMware)
+
+Nmap scan report for 192.168.11.244
+Host is up (0.19s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:6E:ED (VMware)
+
+Nmap scan report for 192.168.11.245
+Host is up (0.19s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:49:C3 (VMware)
+
+Nmap scan report for 192.168.11.247
+Host is up (0.19s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:02:B2 (VMware)
+
+Nmap scan report for 192.168.11.249
+Host is up (0.18s latency).
+PORT    STATE  SERVICE
+110/tcp closed pop3
+MAC Address: 00:50:56:AF:74:C0 (VMware)
+
+Nmap scan report for 192.168.11.250
+Host is up (0.17s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:3F:A4 (VMware)
+
+Nmap scan report for 192.168.11.251
+Host is up (0.19s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:5E:BB (VMware)
+
+Nmap scan report for 192.168.11.252
+Host is up (0.19s latency).
+PORT    STATE    SERVICE
+110/tcp filtered pop3
+MAC Address: 00:50:56:AF:53:15 (VMware)
+
+# Nmap done at Sat May 14 23:12:02 2016 -- 55 IP addresses (41 hosts up) scanned in 4.15 seconds
