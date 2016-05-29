@@ -1,3 +1,4 @@
-Excercises 2.2.1
+Exercises 2.2.1
 
-In preparation of this excercise have the firewall on the Windows host been turned off.
+In preparation of these exercises, the firewall on the Windows host have been turned off.
+
