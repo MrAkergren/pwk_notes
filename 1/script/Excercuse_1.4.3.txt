@@ -1,0 +1,53 @@
+1.4.3
+
+1) A shor bash-script for a ping sweep on the subnet 23 or 24
+Bash-scipt:
+#! /bin/bash
+
+IP=$(ip addr show tap0 | grep "inet "| cut -d " " -f 6)
+NET=$(echo $IP | cut -d "." -f 1-2)
+RANGE=$(echo $IP | cut -d "/" -f 2)
+SUB=$(echo $IP | cut -d "." -f 3)
+
+myloop(){
+    for i in `seq 0 255`;
+    do
+        ping -qnLc 1 -W 1 "$NET.$SUB.$i"
+    done
+}
+
+myloop
+
+if [ $RANGE == "23" ];
+then 
+    let "SUB += 1"
+    myloop
+fi
+
+
+================
+
+2) A short python-script that does the same as in 1).
+Python-script:
+#! /usr/bin/env python3
+import os
+import re
+
+op = os.popen('ip addr show tap0 | grep "inet "| cut -d " " -f 6')
+ip = op.read()
+
+net_l = re.findall('\d+',ip)
+sub = ip[-3:]
+print(net_l)
+def myloop():
+    for i in range(0,256):
+        os.system("ping -qnLc 1 -W 1 " + net_l[0]+"."+net_l[1]+"."+str(net_l[2])+"."+str(i))
+myloop()
+if(23 == int(sub)):
+        net_l[2] = int(net_l[2]) + 1
+        myloop()
+
+
+3)
+The ">" operator takes the output from the command before it and writes that to a file.
+The "|" operator takes the output from the command befor it and sends that as in put to the command after it.
