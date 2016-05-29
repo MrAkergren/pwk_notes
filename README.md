@@ -3,7 +3,7 @@ For offsec
 
 
 Structure: 
-
+```
 root
 ├── chapters
 │   ├── 1
@@ -12,5 +12,4 @@ root
 │   └── 2
 └── nice_to_have
     └── lab-connection
-
-
+```
