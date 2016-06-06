@@ -1,4 +1,10 @@
 Exercises 2.2.1
 
-In preparation of these exercises, the firewall on the Windows host have been turned off.
+In preparation for these exercises, the firewall on the Windows host have been turned off.
 
+1.  a) In the Windows host launch cmd in the Tools\ncat folder
+    b) Enter command 'ncat -l 4444 --ssl -e cmd.exe'
+    c) from the Kali host connect with 'ncat 10.11.8.75 4444 --ssl'
+    d) now is cmd.exe available on the Kali host.
+
+2.  
