@@ -2,3 +2,22 @@ Basic steps to take to perform a buffer overflow test:
 
 1. Find out how large the buffer is, for example using a fuzzer such as fuzz.py
 
+2. When the length is reached, generate a uniq string of that length to find exact
+   length where $esp is overwritten
+
+   For example the tool:
+	pattern_create.rb
+   The complement to that tool is
+	pattern_offset.rb
+   
+   That will take your hex values and give back the exact offset.
+
+3. Generate some shellcode,
+	msfvenom 
+
+4. Find out which hex chars are not valid, commonly 
+	Hex  regex name	
+	\x00 \0    Null
+	\x0A \n    Line feed 
+	\x0D \r    Carriage return
+
