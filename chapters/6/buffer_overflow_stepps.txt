@@ -1,0 +1,4 @@
+Basic steps to take to perform a buffer overflow test:
+
+1. Find out how large the buffer is, for example using a fuzzer such as fuzz.py
+
