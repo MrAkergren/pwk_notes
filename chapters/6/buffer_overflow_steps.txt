@@ -7,17 +7,24 @@ Basic steps to take to perform a buffer overflow test:
 
    For example the tool:
 	pattern_create.rb
-   The complement to that tool is
+   The complement _create.rb is
 	pattern_offset.rb
    
-   That will take your hex values and give back the exact offset.
+   _offset.rb will take your hex values now stored in $esp, and give back the exact offset.
 
-3. Generate some shellcode,
-	msfvenom 
-
-4. Find out which hex chars are not valid, commonly 
+3. Find out which hex chars are not valid (aka bad chars), commonly:
 	Hex  regex name	
 	\x00 \0    Null
 	\x0A \n    Line feed 
 	\x0D \r    Carriage return
+
+4. If $esp changes, locate the instruction
+	jmp esp
+
+   The module to point to must be
+	*) unprotected from DEP and ASLR
+	*) memory range that doesn't contain bad chars
+
+   Example tool for finding out hex values of instructions:
+	nasm_shell.rb 
 
